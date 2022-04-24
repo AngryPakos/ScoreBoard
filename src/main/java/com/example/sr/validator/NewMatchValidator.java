@@ -5,7 +5,7 @@ import com.example.sr.exception.ValidationException;
 
 public class NewMatchValidator {
 
-	public static boolean validateNewMatchTeamNames(String homeTeam, String awayTeam) throws ValidationException {
+	public static void validateNewMatchTeamNames(String homeTeam, String awayTeam) throws ValidationException {
 		
 		if (StringUtils.isEmpty(awayTeam)){
 			throw new ValidationException("Away Team name is empty");
@@ -19,7 +19,6 @@ public class NewMatchValidator {
 			throw new ValidationException("Both names are equal");
 		}
 		
-		return true;
 	}
 
 }

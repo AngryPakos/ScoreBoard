@@ -13,7 +13,6 @@ import lombok.Setter;
 @Setter
 @Getter
 @EqualsAndHashCode
-
 //This class is not really a model ... 
 public class ScoreBoard {
 	
